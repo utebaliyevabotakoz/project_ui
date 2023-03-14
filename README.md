@@ -37,7 +37,7 @@
   <code><img width="5%" title="Allure TestOps" src="./images/logo/TestOps.png"></code>
   <code><img width="5%" title="Github" src="./images/logo/GitHub.png"></code>
   <code><img width="5%" title="Jenkins" src="./images/logo/Jenkins.png"></code>
-  <code><img width="5%" title="Selenoid" src="./images/icons/selenoid-logo.png"></code>
+  <code><img width="5%" title="Selenoid" src="./images/icons/selenoid-logo.PNG"></code>
 </p>
 
 `Java` - язык программирования автотестов \
