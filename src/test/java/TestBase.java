@@ -9,9 +9,6 @@ public class TestBase {
 
     @BeforeAll
     static void beforeAll() {
-//        Configuration.browserSize = "1920x1080";
-//        Configuration.baseUrl = "https://demoqa.com";
-
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("browserVersion", "100");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
@@ -24,7 +21,6 @@ public class TestBase {
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
-
     }
 
 }
