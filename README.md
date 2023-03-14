@@ -1,6 +1,6 @@
-<h2 align="center"> Проект по автоматизации тестирования мобильной версии сайта wikipedia.org </h2>
+<h2 align="center"> Проект по автоматизации тестирования регистрационной формы Student Registration Form demoqa.com/automation-practice-form </h2>
 <p  align="center">
-<img src="images/logo/reqres.PNG">
+<img src="images/logo/demoqa.PNG">
 
 </p>
 
@@ -19,13 +19,12 @@
 
 
 # <a name="Описание">Описание</a>
-Проект состоит из тестов API для сайта https://reqres.in/.
+Проект состоит из тестов UI для сайта https://demoqa.com/automation-practice-form.
 Краткий список фактов о проекте:
-- [x] Используются Модели и Спецификации (Specs)
-- [x] Allure rest-assured listener с custom templates
+- [x] Используются PageObjects, Junit
 - [x] Интеграция с `Allure TestOps`
 - [x] Автотесты как тестовая документация
-- [x] Уведомления в Telegram
+- [x] Отчеты в Allure Report
 
 # <a name="Технологии и инструменты">Технологии и инструменты</a>
 <p  align="center">
@@ -38,8 +37,6 @@
   <code><img width="5%" title="Allure TestOps" src="./images/logo/TestOps.png"></code>
   <code><img width="5%" title="Github" src="./images/logo/GitHub.png"></code>
   <code><img width="5%" title="Jenkins" src="./images/logo/Jenkins.png"></code>
-  <code><img width="5%" title="Telegram" src="./images/logo/Telegram.png"></code>
-  <code><img width="5%" title="REST-Assured" src="./images/icons/rest-assured-logo.png"></code>
   <code><img width="5%" title="Selenoid" src="./images/icons/selenoid-logo.png"></code>
 </p>
 
@@ -49,9 +46,7 @@
 `JUnit5` - фреймворк тестирования \
 `Jenkins` - CI/CD для запуска тестов \
 `Selenoid` - для удаленного запуска браузера в `Docker` контейнерах \
-`REST Assured` - для тестирования REST-API сервисов\
 `Allure Report` - для построения графических отчетов \
-`Telegram Bot` - для уведомлений о результатах тестирования в телеграм бот\
 `Allure TestOps` - как система управления тестированием
 
 [Вернуться к оглавлению ⬆](#Содержание)
@@ -62,11 +57,11 @@
 
 Для запуска локально и в Jenkins используется следующая команда:
 ```bash
-gradle clean test
+gradle clean ui
 ```
 
 
-## <a name="Запуск в Jenkins">Запуск в [Jenkins](https://jenkins.autotests.cloud/job/utebaliyevabotakoz_project_mobile/)</a>
+## <a name="Запуск в Jenkins">Запуск в [Jenkins](https://jenkins.autotests.cloud/job/utebaliyevabotakoz_project_Ui/)</a>
 
 
 Главная страница проекта:
@@ -77,21 +72,13 @@ gradle clean test
 
 Результат сборки проекта доступен в:
 >- <code><strong>*Allure Report*</strong></code>
->- <code><strong>*Telegram bot*</strong></code>
 >- <code><strong>*Allure TestOps*</strong></code>
 
 
 [Вернуться к оглавлению ⬆](#Содержание)
 
 
-## <a name="Telegram">[Уведомление в Telegram о результатах прогона тестов](https://t.me/Qa_botakoz_bot)</a>
-
-Telegram-бот Autotests bot отправляет графический отчет каждой сборки.
-<p  align="center"> <img src="images/screens/Telegram1.PNG" width="650"></p>
-
-
-
-# <a name="AllureReport">Результаты тестов в [Allure Report](https://jenkins.autotests.cloud/job/utebaliyevabotakoz_project_mobile/allure/allure)</a>
+# <a name="AllureReport">Результаты тестов в [Allure Report](https://jenkins.autotests.cloud/job/utebaliyevabotakoz_project_Ui/allure/allure)</a>
 
 ## Главное окно
 
@@ -104,10 +91,6 @@ Telegram-бот Autotests bot отправляет графический отч
 
 <p align="center">
   <img src="images/screens/Allure2.PNG" width="950">
-</p>
-
-<p align="center">
-  <img src="images/screens/Allure3.PNG" width="950">
 </p>
 
 
